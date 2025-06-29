@@ -41,18 +41,33 @@ const CustomProjectCard = ({
         ))}
       </div>
       {!client && <div className="gap-2 mt-2 flex justify-start xs:justify-around xs:mr-8 dark:text-white">
-        {exploreBtn.map((item) => (
-          <a href={item.url} target="_blank" rel="noreferrer">
-            <button
-              key={item.id}
-              className="xs:text-xs bg-white hover:bg-slate-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
-            >
-              {item.icon} &nbsp;
-              <span>{item.name}</span>
-            </button>
-          </a>
-        ))}
-      </div>}
+  {exploreBtn.map((item) => {
+    const isDisabled = !item.url || item.url.trim() === "";
+
+    return isDisabled ? (
+      // 🔒 Disabled button without <a> wrapper
+      <button
+        key={item.id}
+        className="xs:text-xs bg-gray-200 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
+        disabled
+      >
+        {item.icon} &nbsp;
+        <span>{item.name}</span>
+      </button>
+    ) : (
+      // ✅ Enabled button with valid URL
+      <a key={item.id} href={item.url} target="_blank" rel="noreferrer">
+        <button
+          className="xs:text-xs bg-white hover:bg-slate-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
+        >
+          {item.icon} &nbsp;
+          <span>{item.name}</span>
+        </button>
+      </a>
+    );
+  })}
+</div>
+}
     </>
   );
 };
