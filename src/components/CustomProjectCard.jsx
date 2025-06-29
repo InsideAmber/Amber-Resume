@@ -8,17 +8,21 @@ const CustomProjectCard = ({
   featureTitle,
   featureLists,
   exploreBtn,
+  client
 }) => {
   return (
     <>
-      <h3 className="vertical-timeline-element-title font-bold">{title}</h3>
-      <h4 className="vertical-timeline-element-subtitle font-light">
+      <div className='flex items-center'>
+        <h3 className="vertical-timeline-element-title font-bold text-xl font-display dark:text-white">{title}</h3>
+        {client && <span className='text-xs dark:text-gray-400'>/Client</span>}
+      </div>
+      <h4 className="vertical-timeline-element-subtitle italic font-serif text-gray-600 dark:text-gray-300">
         {subTitle}
       </h4>
-      <h3 className="mt-4">{description}</h3>
+      <h3 className="mt-4 font-sans text-gray-800 dark:text-gray-200">{description}</h3>
       <div className="mt-4">
-        <h3 className="font-semibold">{featureTitle}</h3>
-        <ul className="list-disc">
+        <h3 className="font-semibold dark:text-white">{featureTitle}</h3>
+        <ul className="list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-200 leading-relaxed">
           {featureLists.map((item) => (
             <li key={item.id} className="ml-6">
               {item.text}
@@ -30,25 +34,25 @@ const CustomProjectCard = ({
         {techStack.map((item) => (
           <button
             key={item.id}
-            className="ml-2 mt-2 px-4 py-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full"
+            className="ml-2 mt-2 px-4 py-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white text-sm font-medium rounded-full"
           >
             {item.label}
           </button>
         ))}
       </div>
-      <div className="mt-2 flex justify-start xs:justify-around xs:mr-8 dark:text-black">
+      {!client && <div className="gap-2 mt-2 flex justify-start xs:justify-around xs:mr-8 dark:text-white">
         {exploreBtn.map((item) => (
           <a href={item.url} target="_blank" rel="noreferrer">
             <button
               key={item.id}
-              className="xs:text-xs bg-white hover:bg-grey ml-2 xs:ml-0 text-grey-darkest font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
+              className="xs:text-xs bg-white hover:bg-slate-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
             >
               {item.icon} &nbsp;
               <span>{item.name}</span>
             </button>
           </a>
         ))}
-      </div>
+      </div>}
     </>
   );
 };

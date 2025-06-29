@@ -10,12 +10,12 @@ export const skillsData = [
   },
   {
     id: 2,
-    title: 'Redux',
+    title: 'Redux State Management',
     level: 'Advanced',
   },
   {
     id: 3,
-    title: 'React Native',
+    title: 'Angularjs',
     level: 'Intermediate',
   },
   {
@@ -36,321 +36,179 @@ export const skillsData = [
   {
     id: 7,
     title: 'Javascript',
-    level: 'Intermediate',
+    level: 'Advanced',
+  },
+   {
+    id: 8,
+    title: 'Typescript',
+    level: 'Advanced',
   },
   {
-    id: 8,
+    id: 9,
     title: 'MongoDB',
     level: 'Intermediate',
   },
   {
-    id: 9,
+    id: 10,
     title: 'GraphQL',
     level: 'Intermediate',
   },
   {
-    id: 10,
-    title: 'Typescript',
+    id: 11,
+    title: 'Apollo Client',
     level: 'Intermediate',
+  },
+  {
+    id: 12,
+    title: 'Tailwind CSS',
+    level: 'Advanced',
+  },
+  {
+    id: 13,
+    title: 'Material UI',
+    level: 'Advanced',
   },
 ];
 
 export const experienceOneCardData = {
-  title: 'Associate Reactjs Developer @Celebal Technologies',
+  title: 'Software Engineer @Celebal Technologies',
   location: 'Jaipur, India',
   description: `
-  Contributing as a specialized frontend developer focused on ReactJS within Celebal Technologies, 
-  I consistently design and implement captivating user interfaces. 
-  Leveraging cross-functional teamwork, I ensure the seamless delivery of responsive web applications that marry design aesthetics with optimal functionality, enhancing user experiences. 
-  My commitment to clean coding practices and ongoing skill development underscores my role in delivering high-quality frontend solutions.
-    `,
+  Working as a Frontend Developer at Celebal Technologies, I’ve been responsible for building scalable, performant, and accessible user interfaces using modern JavaScript frameworks. 
+  From enterprise dashboards to AI-integrated solutions, I deliver production-grade applications with a focus on responsiveness, maintainability, and user experience. 
+  I actively collaborate with cross-functional teams and follow clean code practices to ensure consistent and high-quality delivery.
+  `,
   list: [
     {
       id: 1,
-      text: 'Led successful Proof of Concepts (POCs) and client projects on the frontend side using ReactJS, ensuring high-quality code and delivering exceptional user interfaces.',
+      text: 'Led frontend development for Greenprint AI projects using Next.js, ReactJS, React Query, Zustand, Material UI, and Tailwind CSS to deliver robust and scalable applications.',
     },
     {
       id: 2,
-      text: 'Developed and maintained cross-platform mobile applications using React Native, ensuring seamless user experiences and efficient codebase.',
+      text: 'Developed dynamic and data-driven dashboards featuring advanced charting and visualization to support client decision-making in AI-based platforms.',
     },
     {
       id: 3,
-      text: 'Developed sleek and intuitive user interfaces using cutting-edge ReactJS libraries to enhance the user experience and visual appeal.',
+      text: 'Worked on a legacy AngularJS-based enterprise project, maintaining and extending frontend features while ensuring compatibility with modern standards.',
     },
     {
       id: 4,
-      text: 'Utilized Microsoft ReactJS libraries to seamlessly design Teams tab and Chatbot TaskModule user interfaces, contributing to a cohesive and efficient collaboration environment.',
+      text: 'Built and optimized Microsoft Teams-integrated UIs using Microsoft’s ReactJS libraries for Tab and Chatbot TaskModules, enhancing user interaction flows.',
     },
     {
       id: 5,
-      text: 'Designed and developed an interactive and modern ReactJS dashboard for clients, integrating diverse charts and graphs to provide insightful data visualization and enhance decision-making capabilities.',
+      text: 'Implemented efficient global state management using Redux Toolkit and Zustand, improving code organization and reducing bugs in complex workflows.',
     },
     {
       id: 6,
-      text: 'Implemented responsive design principles, ensuring seamless user experiences across various devices and screen sizes, and enhancing accessibility and usability.',
+      text: 'Ensured mobile responsiveness and accessibility across web applications by adhering to best practices in semantic HTML, Tailwind CSS, and Material UI.',
     },
     {
       id: 7,
-      text: 'Leveraged state management tools to construct robust and resilient ReactJS web applications, optimizing data flow and maintaining application stability.',
+      text: 'Collaborated closely with UI/UX teams and backend engineers in Agile environments to ship high-quality releases under tight deadlines.',
     },
   ],
   techStack: [
-    {
-      id: 1,
-      label: 'Javascript',
-    },
-    {
-      id: 2,
-      label: 'Reactjs',
-    },
-    {
-      id: 3,
-      label: 'Redux/Redux toolkit',
-    },
-    {
-      id: 4,
-      label: 'React Native',
-    },
-    {
-      id: 5,
-      label: 'Nextjs',
-    },
-    {
-      id: 6,
-      label: 'Nodejs',
-    },
-    {
-      id: 7,
-      label: 'Apollo Client',
-    },
-    {
-      id: 8,
-      label: 'NPM',
-    },
-    {
-      id: 9,
-      label: 'Azure',
-    },
-    {
-      id: 10,
-      label: 'Github',
-    },
+    { id: 1, label: 'JavaScript' },
+    { id: 2, label: 'TypeScript' },
+    { id: 3, label: 'ReactJS' },
+    { id: 4, label: 'Next.js' },
+    { id: 5, label: 'React Query' },
+    { id: 6, label: 'Zustand' },
+    { id: 7, label: 'Redux / Redux Toolkit' },
+    { id: 8, label: 'Material UI' },
+    { id: 9, label: 'Tailwind CSS' },
+    { id: 10, label: 'AngularJS' },
+    { id: 11, label: 'Node.js' },
+    { id: 12, label: 'Apollo Client' },
+    { id: 13, label: 'NPM / Yarn' },
+    { id: 14, label: 'Azure' },
+    { id: 15, label: 'Git / GitHub' },
   ],
 };
 
+
 export const experienceTwoCardData = {
-  title: 'Frontend developer Intern @Celebal Technologies',
+  title: 'Frontend Developer Intern @Celebal Technologies',
   location: 'Jaipur, India',
   description: `
-  Executed a comprehensive tech stack to craft captivating and modern user interfaces, 
-  employing best practices for optimized code. Proficiently acquired skills in 
-  HTML, CSS, JavaScript, and ReactJS, coupled with responsive design expertise, 
-  while leveraging various React libraries to deliver client-desired, in-demand frontends.
-    `,
+  As a Frontend Intern at Celebal Technologies, I gained hands-on experience in modern web development by building responsive and accessible UIs using ReactJS and core web technologies. 
+  I contributed to real-time projects, collaborated with senior developers, and learned to integrate third-party libraries while adhering to design standards and performance best practices.
+  `,
   list: [
     {
       id: 1,
-      text: 'Acquired proficiency in the complete frontend tech stack, encompassing HTML, CSS, JavaScript, ReactJS, and Redux.',
+      text: 'Built responsive web interfaces using HTML, CSS, JavaScript, and ReactJS for real-world business applications.',
     },
     {
       id: 2,
-      text: 'Explored and successfully integrated Microsoft Fluent UI libraries and Material UI components, enhancing user interface aesthetics and functionality.',
+      text: 'Integrated Microsoft Fluent UI and Material UI components to enhance UI consistency and improve usability across enterprise-grade applications.',
     },
     {
       id: 3,
-      text: 'Collaborated on developing a responsive Microsoft Teams tab using ReactJS, ensuring optimal user experiences across various devices and screen sizes.',
+      text: 'Collaborated on the development of Microsoft Teams Tab interface, focusing on layout, responsiveness, and cross-platform compatibility.',
     },
     {
       id: 4,
-      text: "Contributed to the creation of responsive web applications tailored to clients' needs, delivering seamless user experiences across diverse devices and platforms",
+      text: 'Practiced clean coding principles and version control with Git while working in Agile sprints alongside experienced engineers.',
     },
   ],
   techStack: [
-    {
-      id: 1,
-      label: 'HTML',
-    },
-    {
-      id: 2,
-      label: 'CSS',
-    },
-    {
-      id: 3,
-      label: 'Javascript',
-    },
-    {
-      id: 4,
-      label: 'Reactjs',
-    },
-    {
-      id: 5,
-      label: 'Fluent UI',
-    },
-    {
-      id: 6,
-      label: 'Material UI',
-    },
+    { id: 1, label: 'HTML' },
+    { id: 2, label: 'CSS' },
+    { id: 3, label: 'JavaScript' },
+    { id: 4, label: 'ReactJS' },
+    { id: 5, label: 'Redux' },
+    { id: 6, label: 'Material UI' },
+    { id: 7, label: 'Fluent UI' },
+    { id: 8, label: 'Git' },
   ],
 };
+
 
 export const projectOneCardData = {
   techStack: [
-    {
-      id: 1,
-      label: 'Reactjs',
-    },
-    {
-      id: 2,
-      label: 'Google Auth',
-    },
-    {
-      id: 3,
-      label: 'Sanity Io',
-    },
-  ],
-  title: 'Share Me Social Media Application',
-  subTitle:
-    'Developed a social media platform facilitating image sharing and downloading, fostering interactive content engagement.',
-  description: `Designed and built a captivating Social Media platform resembling Pinterest, allowing seamless image sharing and downloading. Leveraged Google Auth for secure user authentication, implemented with ReactJS, and utilized Sanity.io for efficient content management, showcasing a blend of modern technologies and user-centered design.`,
-  featureTitle: 'Some of the Important features -',
-  featureLists: [
-    {
-      id: 1,
-      text: 'Implemented secure and convenient login and logout functionality utilizing Google Auth, enhancing user accessibility and data protection within the project.',
-    },
-    {
-      id: 2,
-      text: 'Enabled users to upload images sorted by diverse categories, enhancing content organization and user experience within the project.',
-    },
-    {
-      id: 3,
-      text: "Implemented efficient search functionality and seamless image downloading, optimizing user exploration and interaction with the project's visual content.",
-    },
-    {
-      id: 4,
-      text: "Facilitated user engagement by incorporating a seamless picture commenting feature, fostering interactive discussions and enhancing the project's social interaction aspect",
-    },
-  ],
-  exploreBtn: [
-    {
-      id: 1,
-      name: 'Visit Website',
-      icon: <TbWorld />,
-      url: 'https://insidea-share-me.netlify.app/',
-    },
-    {
-      id: 2,
-      name: 'Source Code',
-      icon: <BsGithub />,
-      url: 'https://github.com/InsideAmber/Share_Me_Social-media',
-    },
-  ],
-};
+    { id: 1, label: 'ReactJS' },
+    { id: 2, label: 'Context API' },
+    { id: 3, label: 'Microsoft Bot Framework' },
+    { id: 4, label: 'Javascript' },
+    { id: 5, label: 'HTML/SCSS' },
+    { id: 6, label: 'Azure Devops' },
 
-export const projectTwoCardData = {
-  techStack: [
-    {
-      id: 1,
-      label: 'Reactjs',
-    },
-    {
-      id: 2,
-      label: 'Rapid API',
-    },
-    {
-      id: 3,
-      label: 'Chakra UI',
-    },
-    {
-      id: 4,
-      label: 'Framer Motion',
-    },
   ],
-  title: 'Realtor',
+  title: 'Discover ASR Cubby Chatbot',
   subTitle:
-    'Created a Next.js website offering property rentals and purchases for apartments, villas, and hotels in Dubai, streamlining the real estate search experience.',
-  description: `Designed and developed the Realtor website using Next.js, seamlessly integrating with Rapid API, enabling efficient browsing and selection of apartments, villas, and hotels available for purchase and rent in Dubai. Showcased expertise in frontend development, API integration, and real estate domain knowledge to deliver a user-friendly property listing platform.`,
-  featureTitle: 'Some of the Important features -',
-  featureLists: [
-    {
-      id: 1,
-      text: 'Empowered users with comprehensive property insights by implementing a feature to access detailed information about all listed properties, enhancing informed decision-making within the Realtor project.',
-    },
-    {
-      id: 2,
-      text: 'Enhanced user experience through captivating animations and seamless loading features, elevating the visual appeal and performance of the project.',
-    },
-  ],
-  exploreBtn: [
-    {
-      id: 1,
-      name: 'Visit Website',
-      icon: <TbWorld />,
-      url: 'https://insidea-realestate.vercel.app/',
-    },
-    {
-      id: 2,
-      name: 'Source Code',
-      icon: <BsGithub />,
-      url: 'https://github.com/InsideAmber/insidea_realestate',
-    },
-  ],
-};
-
-export const projectThreeCardData = {
-  techStack: [
-    {
-      id: 1,
-      label: 'Reactjs',
-    },
-    {
-      id: 2,
-      label: 'Nodejs',
-    },
-    {
-      id: 3,
-      label: 'Express',
-    },
-    {
-      id: 4,
-      label: 'MongoDB',
-    },
-    {
-      id: 5,
-      label: 'Redux',
-    },
-    {
-      id: 6,
-      label: 'Material UI',
-    },
-  ],
-  title: 'Memories App',
-  subTitle:
-    'Crafted a MERN application dedicated to capturing and cherishing moments, providing a platform to create and store memories.',
+    'Developed a chatbot solution to enhance user interaction, feedback collection, and data analytics for continuous performance improvement.',
   description: `
-  Developed a dynamic Memories App utilizing the MERN stack, featuring a social media-inspired platform with robust CRUD capabilities (Create, Read, Update, Delete), showcasing adeptness in full-stack development and user-centric design. 
+  Played a key role in designing and developing the Discover ASR Cubby chatbot interface using ReactJS. 
+  Focused on enhancing performance, usability, and analytics by integrating UTM tracking, feedback systems, and Azure Table Storage for user interaction data.
+  Ensured maintainable, scalable, and high-quality code while following modern frontend practices and collaborating with cross-functional teams.
   `,
-  featureTitle: 'Some of the Important features -',
-  featureLists: [
-    {
-      id: 1,
-      text: "Implemented comprehensive user authentication features, including sign-in, sign-up, sign-out functionality, and seamless Google login, enhancing the project's user accessibility and security measures.",
-    },
-    {
-      id: 2,
-      text: 'Designed and implemented full CRUD (Create, Read, Update, Delete) functionality for user-generated posts, elevating user engagement and interaction within the project.',
-    },
-    {
-      id: 3,
-      text: 'Implemented interactive features allowing users to like and comment on posts, fostering dynamic user engagement and fostering a sense of community within the project.',
-    },
-    {
-      id: 4,
-      text: 'Developed robust search and filtering capabilities for posts, empowering users to efficiently locate and access relevant content within the project.',
-    },
-  ],
+  featureTitle: 'Project Tasks and Accomplishments -',
+ featureLists: [
+  {
+    id: 1,
+    text: 'Resolved key frontend bugs to improve chatbot stability, resulting in a smoother user experience across multiple devices and browsers.',
+  },
+  {
+    id: 2,
+    text: 'Integrated UTM tag appending functionality into dynamic backend links, enabling enhanced user tracking and actionable campaign analytics.',
+  },
+  {
+    id: 3,
+    text: 'Designed and implemented a feedback collection feature tied to conversation IDs, enabling real-time monitoring and iterative performance tuning.',
+  },
+  {
+    id: 4,
+    text: 'Stored and managed user interaction logs in Azure Table Storage for scalable data handling and advanced analytical reporting.',
+  },
+  {
+    id: 5,
+    text: 'Collaborated cross-functionally with backend and QA teams to ensure pixel-perfect UI integration and seamless feature delivery in agile sprints.',
+  },
+],
   exploreBtn: [
-    {
+      {
       id: 1,
       name: 'Visit Website',
       icon: <TbWorld />,
@@ -360,10 +218,124 @@ export const projectThreeCardData = {
       id: 2,
       name: 'Source Code',
       icon: <BsGithub />,
-      url: 'https://github.com/InsideAmber/Memories-Project',
+      url: '', // 🔁 Replace with actual repo link
     },
   ],
 };
+
+
+export const projectTwoCardData = {
+  techStack: [
+    { id: 1, label: 'ReactJS' },
+    { id: 2, label: 'Fluent UI' },
+    { id: 3, label: 'Redux Js' },
+    { id: 4, label: 'REST API' },
+    { id: 5, label: 'Azure Devops' },
+
+  ],
+  title: 'Ejazate Chatbot',
+  subTitle:
+    'Built an intelligent leave management chatbot interface with employee/manager calendars, reusable forms, and seamless backend integration.',
+  description: `
+  Contributed to the development of Ejazate Chatbot — a comprehensive leave management tool that simplifies leave tracking and approvals for both employees and managers. 
+  The system includes interactive calendars, reusable forms, and advanced table functionalities like filtering, pagination, and attachments to enhance user experience and performance.
+  `,
+  featureTitle: 'Some of the Important features -',
+  featureLists: [
+    {
+      id: 1,
+      text: 'Developed dynamic employee and manager leave calendars with visual highlights for pending, approved, rejected, and casual leaves.',
+    },
+    {
+      id: 2,
+      text: 'Created reusable form components for creating and updating leave requests, stored in responsive tables with inline view/edit actions.',
+    },
+    {
+      id: 3,
+      text: 'Built manager-specific functionalities including leave approvals, viewing team schedules, and managing allocations via secure role-based flows.',
+    },
+    {
+      id: 4,
+      text: 'Integrated features like file download/upload, table filtering, and pagination to improve accessibility and efficiency for end-users.',
+    },
+    {
+      id: 5,
+      text: 'Collaborated with backend developers to ensure smooth data flow and conducted extensive UI testing to deliver a stable, production-ready chatbot.',
+    },
+  ],
+  exploreBtn: [
+      {
+      id: 1,
+      name: 'Visit Website',
+      icon: <TbWorld />,
+      url: '',
+    },
+    {
+      id: 2,
+      name: 'Source Code',
+      icon: <BsGithub />,
+      url: '', // 🔁 Replace with real link if different
+    },
+  ],
+};
+
+
+export const projectThreeCardData = {
+  techStack: [
+    { id: 1, label: 'ReactJS' },
+    { id: 2, label: 'Next.js 14' },
+    { id: 3, label: 'TypeScript' },
+    { id: 4, label: 'Material UI' },
+    { id: 5, label: 'React Query' },
+    { id: 6, label: 'Zustand' },
+    { id: 7, label: 'Azure DevOps' },
+  ],
+  title: 'Greenprint AI',
+  subTitle:
+    'Developed a sustainability-focused platform with advanced role-based features and Figma-accurate UI using modern React tooling.',
+  description: `
+  Contributed to the development of Greenprint AI, a platform built with Next.js 14 and Material UI, designed to manage ESG certifications and sustainability metrics. 
+  Worked on state management, API integration, and reusable UI components while ensuring pixel-perfect implementation from Figma designs and improving overall frontend architecture.
+  `,
+  featureTitle: 'Some of the Important features -',
+  featureLists: [
+    {
+      id: 1,
+      text: 'Implemented user roles, permission logic, and profile/invite flows using Zustand and React Query within a Next.js 14 architecture.',
+    },
+    {
+      id: 2,
+      text: 'Created reusable UI components for ESG certifications, data listings, and metric input forms with high fidelity to Figma specifications.',
+    },
+    {
+      id: 3,
+      text: 'Refactored and redesigned 70% of Material UI-based components to align with design system and resolve visual inconsistencies.',
+    },
+    {
+      id: 4,
+      text: 'Enhanced user experience by debugging UI issues and introducing custom-styled Material UI components for improved consistency.',
+    },
+    {
+      id: 5,
+      text: 'Collaborated with the team to design scalable state and API layers using Zustand and React Query, ensuring maintainability and performance.',
+    },
+  ],
+  exploreBtn: [
+      {
+      id: 1,
+      name: 'Visit Website',
+      icon: <TbWorld />,
+      url: '',
+    },
+    {
+      id: 2,
+      name: 'Source Code',
+      icon: <BsGithub />,
+      url: '', // Replace if hosted elsewhere
+    },
+  ],
+};
+
 
 export const projectFourCardData = {
   techStack: [

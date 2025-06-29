@@ -26,6 +26,7 @@ const CustomProjectTimeline = () => {
             featureTitle={projectOneCardData.featureTitle}
             featureLists={projectOneCardData.featureLists}
             exploreBtn={projectOneCardData.exploreBtn}
+            client={true}
           />
         </li>
         <li className="mb-10 ml-6">
@@ -40,6 +41,7 @@ const CustomProjectTimeline = () => {
             featureTitle={projectTwoCardData.featureTitle}
             featureLists={projectTwoCardData.featureLists}
             exploreBtn={projectTwoCardData.exploreBtn}
+            client={true}
           />
         </li>
         <li className="mb-10 ml-6">
@@ -54,6 +56,7 @@ const CustomProjectTimeline = () => {
             featureTitle={projectThreeCardData.featureTitle}
             featureLists={projectThreeCardData.featureLists}
             exploreBtn={projectThreeCardData.exploreBtn}
+            client={true}
           />
         </li>
         <li className="mb-10 ml-6">
@@ -68,6 +71,7 @@ const CustomProjectTimeline = () => {
             featureTitle={projectFourCardData.featureTitle}
             featureLists={projectFourCardData.featureLists}
             exploreBtn={projectFourCardData.exploreBtn}
+            client={false}
           />
         </li>
       </ol>

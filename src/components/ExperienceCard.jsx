@@ -11,27 +11,15 @@ const ExperienceCard = ({
 }) => {
   return (
     <>
-      <h3 className="vertical-timeline-element-title font-semibold">{title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">
+      <h3 className="vertical-timeline-element-title font-semibold text-gray-900 dark:text-white">{title}</h3>
+      <h4 className="vertical-timeline-element-subtitle text-gray-600 dark:text-gray-300">
         {location} &nbsp;
         <span className="font-semibold">{isTime && isTime}</span>
       </h4>
-      <h3 className="mt-4 font-normal">
-        {isParagraph ? (
-          <h3 className="font-normal">
-            Gained extensive hands-on experience in various frontend techniques
-            during my internship, enhancing my proficiency in modern web
-            development practices.
-          </h3>
-        ) : (
-          <h3 className="font-normal">
-            Crafting visually appealing and user-centric web designs that
-            seamlessly blend aesthetics with intuitive functionality.
-          </h3>
-        )}
+      <h3 className="mt-4 font-normal text-gray-800 dark:text-gray-200">
         {description}
       </h3>
-      <ul className="mt-4 list-disc">
+      <ul className="mt-4 list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
         {list.map((item) => (
           <li key={item.id} className="ml-4">
             {item.text}
@@ -42,7 +30,7 @@ const ExperienceCard = ({
         {techStack.map((item) => (
           <button
             key={item.id}
-            className="ml-2 mt-2 px-4 py-1 bg-gray-200 hover:bg-gray-300 text-gray-800 text-sm font-medium rounded-full"
+            className="ml-2 mt-2 px-4 py-1 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 text-sm font-medium rounded-full"
           >
             {item.label}
           </button>

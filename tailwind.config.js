@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   darkMode: 'class',
@@ -12,7 +14,9 @@ module.exports = {
         dimBlue: 'rgba(9, 151, 124, 0.1)',
       },
       fontFamily: {
-        IBMPlex: ['IBM Plex Sans', 'sans-serif'],
+        display: ['Poppins', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: ['Merriweather', ...defaultTheme.fontFamily.serif],
       },
     },
     screens: {
