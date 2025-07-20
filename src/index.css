@@ -40,3 +40,10 @@ position:relative;
   right:20px; 
   top:2px;
 }
+.contact-btn {
+  @apply bg-white dark:bg-gray-700 text-gray-800 dark:text-white 
+         hover:bg-slate-200 dark:hover:bg-gray-600 
+         font-medium py-2 px-4 rounded-lg flex items-center 
+         text-sm shadow-sm transition-all duration-200 
+         hover:scale-105;
+}

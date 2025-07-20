@@ -2,13 +2,28 @@ import React, { useState } from "react";
 import { BsLightbulb } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
 import CustomExperienceTimeline from "./components/CustomExperienceTimeline";
 import CustomProjectTimeline from "./components/CustomProjectTimeline";
 import { skillsData, contacts } from "./constants";
 import EducationCard from "./components/EducationCard";
+import IntroSection from "./components/IntroSection";
+import SkillsSection from "./components/SkillsSection";
 
 const App = () => {
   const [theme, setTheme] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const phoneNumber = "+918603926797"; // 🔁
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(phoneNumber);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Hide tooltip after 2 seconds
+    } catch (err) {
+      console.error("Failed to copy phone number:", err);
+    }
+  };
 
   const changeTheme = () => {
     setTheme(!theme);
@@ -24,7 +39,8 @@ const App = () => {
             {theme ? <BsLightbulb size={35} /> : <MdDarkMode size={35} />}
           </button>
         </div>
-        <div className="dark:bg-slate-800 container bg-white w-10/12 xs:w-11/12 h-max pb-8 m-auto rounded-xl">
+        <IntroSection />
+        {/* <div className="dark:bg-slate-800 container bg-white w-10/12 xs:w-11/12 h-max pb-8 m-auto rounded-xl">
           <div className="pt-8 pl-14">
             <h1 className="text-6xl dark:text-blue-800 font-display">
               <span className="dark:text-blue-800 font-bold font-display">
@@ -55,15 +71,18 @@ const App = () => {
           </div>
           <div className="mt-6 pl-14">
             <a
-            href="/Amber_Khan_MERN_Stack_Resume_2025.pdf"
-             download
-            className="bg-white hover:bg-gray-100 text-gray-800 font-semibold font-sans py-2 px-4 border border-gray-400 rounded shadow">
+              href="/Amber_Khan_MERN_Stack_Resume_2025.pdf"
+              download
+              className="bg-white hover:bg-gray-100 text-gray-800 font-semibold font-sans py-2 px-4 border border-gray-400 rounded shadow"
+            >
               Download CV
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className="dark:bg-slate-600 dark:text-white pt-6 flex flex-col m-auto w-10/12 xs:w-11/12 xs:pr-2.5 bg-slate-100 rounded-xl mt-4">
+        <SkillsSection />
+
+        {/* <div className="dark:bg-slate-600 dark:text-white pt-6 flex flex-col m-auto w-10/12 xs:w-11/12 xs:pr-2.5 bg-slate-100 rounded-xl mt-4">
           <div className="flex ml-12 items-center xs:ml-4">
             <h1 className="text-3xl font-bold font-display">Skills</h1>
           </div>
@@ -79,7 +98,7 @@ const App = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="dark:bg-slate-600 dark:text-white pt-12 flex flex-col m-auto w-10/12 xs:w-11/12 xs:pr-2.5 bg-slate-100 rounded-xl mt-4">
           <div className="flex ml-12 items-center xs:ml-4">
@@ -112,31 +131,59 @@ const App = () => {
           </div>
         </div>
 
-        <div className="dark:bg-slate-600 dark:text-white pt-12 pb-8 flex flex-col m-auto w-10/12 xs:w-11/12 bg-slate-100 rounded-xl mt-4">
-          <div className="flex ml-12 items-center xs:ml-4">
-            <h1 className="text-3xl font-semibold">Contact Me</h1>
+        <div
+          id="contact"
+          className="dark:bg-slate-600 dark:text-white pt-12 pb-10 px-6 sm:px-4 w-10/12 sm:w-10/12 bg-slate-100 dark:border dark:border-slate-500 rounded-xl mt-6 mx-auto shadow-md transition-all"
+        >
+          <div className="text-center">
+            <h1 className="text-3xl font-bold mb-2">Let's Connect</h1>
+            <p className="text-gray-600 dark:text-gray-300 text-sm">
+              I’m just a click away. Let’s connect and create something amazing!
+            </p>
           </div>
-          <div className="ml-12 xs:ml-4 mt-8 xs:mt-0 grid grid-cols-4 xs:grid-cols-2 gap-4">
-            <div>
+
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            {/* Gmail Button */}
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:khanamber093@gmail.com")
+              }
+              className="contact-btn group"
+              title="Email me on Gmail"
+            >
+              <SiGmail className="mr-2 group-hover:text-red-500 transition-colors" />
+              <span>Gmail</span>
+            </button>
+
+            {/* Phone Button */}
+            <div className="relative">
               <button
-                onClick={() =>
-                  (window.location = "mailto:khanamber093@gmail.com")
-                }
-                className="xs:text-xs bg-white hover:bg-slate-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center"
+                onClick={handleCopy}
+                className="contact-btn group"
+                title="Click to copy phone number"
               >
-                <SiGmail /> &nbsp;
-                <span>Gmail</span>
+                <FaPhoneAlt className="mr-2 group-hover:text-green-500 transition-colors" />
+                <span>Phone</span>
               </button>
+              {/* Tooltip */}
+              {copied && (
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded px-2 py-1 shadow-lg dark:bg-white dark:text-black transition-opacity duration-300">
+                  Copied!
+                </div>
+              )}
             </div>
+
+            {/* Dynamic Contacts */}
             {contacts.map((item) => (
-              <div key={item.id}>
-                <a href={item.url} target="_blank" rel="noreferrer">
-                  <button className="xs:text-xs bg-white hover:bg-slate-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-white font-bold py-2 px-4 xs:px-1 rounded-lg inline-flex items-center">
-                    {item.icon} &nbsp;
-                    <span>{item.name}</span>
-                  </button>
-                </a>
-              </div>
+              <a key={item.id} href={item.url} target="_blank" rel="noreferrer">
+                <button
+                  className="contact-btn group"
+                  title={`Visit ${item.name}`}
+                >
+                  {item.icon}
+                  <span className="ml-2">{item.name}</span>
+                </button>
+              </a>
             ))}
           </div>
         </div>
