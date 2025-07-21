@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Amber-Resume/static/css/main.b3db4932.css",
+    "main.js": "/Amber-Resume/static/js/main.0f73a995.js",
+    "index.html": "/Amber-Resume/index.html",
+    "main.b3db4932.css.map": "/Amber-Resume/static/css/main.b3db4932.css.map",
+    "main.0f73a995.js.map": "/Amber-Resume/static/js/main.0f73a995.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3db4932.css",
+    "static/js/main.0f73a995.js"
+  ]
+}
