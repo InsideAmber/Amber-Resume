@@ -16,10 +16,10 @@ const ExperienceCard = ({
         {location} &nbsp;
         <span className="font-semibold">{isTime && isTime}</span>
       </h4>
-      <h3 className="mt-4 font-normal text-gray-800 dark:text-gray-200">
+      <h3 className="mt-4 font-normal text-gray-800 dark:text-gray-200 pr-6">
         {description}
       </h3>
-      <ul className="mt-4 list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
+      <ul className="mt-4 list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-300 leading-relaxed pr-6">
         {list.map((item) => (
           <li key={item.id} className="ml-4">
             {item.text}

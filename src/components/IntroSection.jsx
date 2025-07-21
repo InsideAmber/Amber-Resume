@@ -49,8 +49,18 @@ const IntroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.7 }}
       >
-        <p className="font-light font-sans leading-relaxed">
-          I am a highly motivated and detail-oriented <strong>MERN Stack Developer</strong> with a specialization in <strong>ReactJS</strong>. I build modern, responsive, and high-performance web applications using <strong>MongoDB, Express.js, React, and Node.js</strong>. Skilled in designing scalable RESTful APIs, optimizing front-end performance, and creating seamless user interfaces with pixel-perfect precision. I bring a strong commitment to writing clean, maintainable code and enjoy collaborating with cross-functional teams to build applications that solve real-world problems.
+        <p className="font-light leading-relaxed">
+          A passionate and results-driven MERN Stack Developer with a strong
+          focus on building scalable, high-performance web applications using
+          MongoDB, Express.js, React.js, and Node.js. Experienced in crafting
+          pixel-perfect, responsive UIs with React.js, Tailwind CSS, and
+          TypeScript. Adept at designing and integrating RESTful APIs,
+          optimizing front-end performance, and implementing efficient state
+          management solutions using Redux and Zustand. Committed to writing
+          clean, maintainable code and collaborating effectively within
+          cross-functional Agile teams. Enthusiastic about creating real-world
+          solutions through modern web technologies — always ready to take on
+          new challenges and deliver meaningful digital experiences.
         </p>
 
         <p className="font-light font-sans mt-6">

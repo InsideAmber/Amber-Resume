@@ -16,13 +16,13 @@ const CustomProjectCard = ({
         <h3 className="vertical-timeline-element-title font-bold text-xl font-display dark:text-white">{title}</h3>
         {client && <span className='text-xs dark:text-gray-400'>/Client</span>}
       </div>
-      <h4 className="vertical-timeline-element-subtitle italic font-serif text-gray-600 dark:text-gray-300">
+      <h4 className="vertical-timeline-element-subtitle italic font-serif text-gray-600 dark:text-gray-300 pr-6">
         {subTitle}
       </h4>
-      <h3 className="mt-4 font-sans text-gray-800 dark:text-gray-200">{description}</h3>
+      <h3 className="mt-4 font-sans text-gray-800 dark:text-gray-200 pr-6">{description}</h3>
       <div className="mt-4">
         <h3 className="font-semibold dark:text-white">{featureTitle}</h3>
-        <ul className="list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-200 leading-relaxed">
+        <ul className="list-disc pl-5 space-y-1 font-sans text-sm text-gray-800 dark:text-gray-200 leading-relaxed pr-6">
           {featureLists.map((item) => (
             <li key={item.id} className="ml-6">
               {item.text}

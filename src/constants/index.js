@@ -81,7 +81,7 @@ export const experienceOneCardData = {
   list: [
     {
       id: 1,
-      text: 'Led frontend development for Greenprint AI projects using Next.js, ReactJS, React Query, Zustand, Material UI, and Tailwind CSS to deliver robust and scalable applications.',
+      text: 'Led frontend development for Greenprint AI projects using Next.js, ReactJS, React Query, Zustand, Material UI, and Context API to deliver robust and scalable applications.',
     },
     {
       id: 2,

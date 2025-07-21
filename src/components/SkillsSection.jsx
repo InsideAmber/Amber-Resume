@@ -14,6 +14,7 @@ import {
   SiNodedotjs,
   SiApollographql,
 } from "react-icons/si";
+import { HiOutlineWrench } from "react-icons/hi2"
 import { motion } from "framer-motion";
 
 const skillsData = [
@@ -71,11 +72,12 @@ export default function SkillsSection() {
     <div className="dark:bg-slate-600 dark:text-white pt-6 flex flex-col m-auto w-10/12 xs:w-11/12 xs:pr-2.5 bg-slate-100 rounded-xl mt-4">
       <div className="flex ml-12 items-center xs:ml-4">
         <motion.h1
-          className="text-3xl font-bold font-display"
+          className="text-2xl md:text-3xl font-bold flex items-center gap-3 font-display"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <HiOutlineWrench className="text-indigo-500 hover:scale-110 transition-transform" />
           Tech Stack
         </motion.h1>
       </div>

@@ -25,7 +25,7 @@ const ProjectCard = ({
       <h4 className="vertical-timeline-element-subtitle font-light">
         {subTitle}
       </h4>
-      <h3 className="mt-4">{description}</h3>
+      <h3 className="mt-4 pr-6">{description}</h3>
       <div className="mt-4">
         <h3 className="font-semibold">{featureTitle}</h3>
         <ul className="list-disc">
