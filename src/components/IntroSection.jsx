@@ -70,7 +70,7 @@ const IntroSection = () => {
 
       <div className="mt-6 pl-14 flex gap-4 flex-wrap">
         <motion.a
-          href="/Amber_Khan_MERN_Stack_Resume_2025.pdf"
+          href="/Amber_Khan_Resume.pdf"
           download
           className="bg-white hover:bg-gray-100 text-gray-800 font-semibold font-sans py-2 px-4 border border-gray-400 rounded shadow"
           whileHover={{ scale: 1.05 }}

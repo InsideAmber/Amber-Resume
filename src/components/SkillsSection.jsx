@@ -12,8 +12,9 @@ import {
   SiMaterialui,
   SiAngularjs,
   SiNodedotjs,
-  SiApollographql,
+  SiApollographql
 } from "react-icons/si";
+import {BiNetworkChart} from "react-icons/bi"
 import { HiOutlineWrench } from "react-icons/hi2"
 import { motion } from "framer-motion";
 
@@ -31,6 +32,8 @@ const skillsData = [
   { id: 11, title: "Apollo Client", level: "Intermediate" },
   { id: 12, title: "Tailwind CSS", level: "Advanced" },
   { id: 13, title: "Material UI", level: "Advanced" },
+  { id: 14, title: "Microfrontends", level: "Intermediate" },
+
 ];
 
 const icons = {
@@ -52,6 +55,7 @@ const icons = {
   "Apollo Client": <SiApollographql size={20} color="#311C87" />,
   "Tailwind CSS": <SiTailwindcss size={20} color="#38bdf8" />,
   "Material UI": <SiMaterialui size={20} color="#007fff" />,
+  "Microfrontends": <BiNetworkChart size={20} color="#007fff" />,
 };
 
 const cardVariants = {
